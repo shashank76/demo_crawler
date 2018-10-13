@@ -2,10 +2,10 @@ Rails.application.routes.draw do
   
   get 'users/new'
   	# devise_for :users
+	root :to => "news#index"
 	resources :news do
 		collection do
 			post :update_viewer
-			post :delete_news
 		end
 	end
 	resources :sessions

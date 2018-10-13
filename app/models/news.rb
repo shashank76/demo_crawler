@@ -5,6 +5,6 @@ class News < ApplicationRecord
 	has_many :deleted_news, dependent: :destroy
 
 	def self.not_deleted(user)
-		News.all - user.deleted_news.map(&:news)
+		News.all.order("updated_at desc") - user.deleted_news.map(&:news)
 	end
 end
