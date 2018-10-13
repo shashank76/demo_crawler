@@ -1,0 +1,149 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+.login-page, .register-page {
+    background: #575757;
+}
+.login-box, .register-box {
+    width: 400px!important;
+    margin-top: 5pc!important; 
+    margin: 7% auto;
+}
+.checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio] {
+    position: absolute;
+    margin-top: 4px\9;
+     margin-left: 0px!important; 
+}
+.text-center {
+    text-align: center;
+    margin-left: 2pc;
+    padding: 10px 10px 10px 10px;
+    text-decoration: none!important;
+}
+.transaction-log {
+    margin-top: 20px;
+    float: right;
+    margin-right: 2pc;
+}
+.login-box-body.trans-body {
+    padding: 15px 15px 15px 0px !important;
+}
+.btn-default {
+    background-color: #575757!important;
+    color: #fff!important;
+    border-color: #575757!important;
+}
+.menu-txt {
+    color: #fff !important;
+    text-decoration: none!important;
+}
+.skin-red .main-header .navbar {
+    background-color: #575757;
+}
+.skin-red .main-header .logo {
+    background-color: #575757;
+    color: #fff;
+    border-bottom: 0 solid transparent;
+}
+.skin-red .main-header .logo {
+    background-color: #575757;
+    color: #fff;
+    border-bottom: 0 solid transparent;
+}
+.skin-red .main-header .logo:hover {
+    background-color: #575757;
+    color: #fff;
+    border-bottom: 0 solid;
+}
+.skin-red .main-header .navbar .sidebar-toggle:hover {
+    color: #fff;
+    background-color: #575757;
+}
+.nav-tabs-custom > .nav-tabs > li.header {
+    line-height: 35px;
+    padding: 0 10px;
+    font-size: 20px;
+    color: #fff;
+}
+body {
+    margin-left: 10px;
+}
+.form-control {vertical-align: bottom!important;}
+.profile-inner{margin-left: 100px;}
+.image-responsive {max-width: 70%; margin-left: 25px;}
+.trophy-image-responsive {max-width: 20%;}
+.ad-log {width: 110px;}
+.ad-log-min {width: 50px;}
+.checkbox label, .radio label { padding-left: 0px; color: #666!important;}
+/*a {color: #000!important;}*/
+/*ol, ul > a {color: #575757!important;}*/
+.menu-txt {color: #fff!important;text-decoration: none;}
+.for-pass {color: #666!important;}
+.fans-link {color: #575757!important;}
+.ad-log-min1 {width: 20px;}
+.ad-log-min2 {width: 40px;}
+.add_nested_fields {border: 1px solid #575757;background-color: #575757;padding: 5px 5px;border-radius: 5px;text-decoration: none!important;}
+.add_nested_fields:hover {color: #fff;}
+.sidebar-menu > li > a {padding: 10px 10px 8px 20px;}
+.user-panel > .info {padding: 15px 0px 0px 5px!important;left: 52px!important;}
+.flag-img {width: 200px!important;border: 0px!important;border-radius: 0px!important;}
+.login-btn {margin: 5px 30px!important;width: 92%!important;}
+.table-related { margin-top: -20px;}
+.team-header {margin-left: 50px;background-color: #575757;color: #fff;padding: 5px 15px;font-size: 18px;}
+input[type="file"] {display: block;padding: 0px 0px 0px 0px!important;}
+.pagination {border-radius: 4px;display: inline-block;float: right;background: #575757;padding: 5px 20px!important;}
+.pagination > a {color: #fff!important;}
+
+.in-out-block .in { width: 40px; height: 40px;border-radius: 50%;display: inline-block;background: #fff;border: 3px solid #fff;}
+.user-image.ad-log-min3 {width: 40px;height: 40px;border-radius: 10px;  padding: 0px;margin: -3px;}
+
+.skin-red .sidebar-menu > li > .treeview-menu {margin: 0 1px;background: #575757;}
+
+.skin-red .treeview-menu > li > a {color: #fff!important;}
+.add_nested_fields {border: 1px solid #575757;background-color: #575757;  padding: 5px 5px;border-radius: 5px;text-decoration: none !important;color: #fff !important;}
+.view {color: #af0819 !important;margin: -32px 200px 26px 16px!important;font-size: 20px;}
+
+.player_details {margin-top: 60px!important;}
+
+.text-muted.text-center.club_details {
+    margin-left: 180px;
+    margin-top: -65px;
+    padding: 0px 0px 2pc;
+}
+.player-stats {
+    float: right;
+    margin-right: 10pc;
+    color: green;
+    font-size: 18px;
+}
+.input-group.pull-center {
+    margin-left: 38pc;
+    margin-top: 6px;
+}
+.input-group.pull-center > input[type="file"] {
+    display: block;max-width: 260px;
+    padding: 5px 0px 0px 0px !important;
+}
+.btn.btn-file {
+    position: relative;
+    overflow: hidden;
+    max-width: 300px;
+}
+.alert-dismissable .close, .alert-dismissible .close {
+    position: relative;top: 5px!important;right: 25px!important;color: #000!important;}
+/*.bootstrap-datetimepicker-widget.dropdown-menu.usetwentyfour.glyphicon{}*/
+.glyphicon-time,.glyphicon-calendar  {color: #000!important;}
+.h5, h5 { font-size: 14px; font-weight: bold!important;}
+.payment-details {font-size: 11px;}
+.nav-tabs > li > a {color: #fff;}
+.select2-container .select2-search--inline .select2-search__field {
+    box-sizing: border-box;border: none;font-size: 100%;
+    margin-top: 5px;padding: 0px 7px;
+}
+.discount {color: #575757;}
+.off {color: red;}
+.form-group.cen-stats {margin-left: 370px;margin-top: 50px;}
+.stats-img {height: auto;width: 500px;margin-left: 300px;margin-top: 50px;}
+.stats-img.team-rank {border-radius: 0;height: 600px;margin-left: 350px;
+    margin-right: 200px;max-width: 600px;min-height: 600px;width: 500px;}

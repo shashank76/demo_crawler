@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>DemoCrawl</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+</head>
+<body class="hold-transition login-page">
+<div class="login-box">
+  <div class="login-logo">
+    <!-- <img src="/2.png" alt="logo" /> -->
+    <!-- <a href="/index2.html"><b>Admin</b>LTE</a> -->
+  </div>
+  <!-- /.login-logo -->
+  <div class="login-box-body">
+    <%= form_for(:session, url: sessions_path,:class=> "form-control",html: {id: "signin-idenity"}) do |f| %>
+			<div class="form-group">
+				<%= f.email_field :email, class: 'form-control', placeholder: "Email", required: true,autocomplete: "off" %>
+			</div>
+
+			<div class="form-group">
+				<%= f.password_field :password, class: 'form-control', placeholder: "Password" , required: true,autocomplete: "off" %>
+			</div>
+			<div class="row">
+				<div class="col-xs-6 col-sm-6">
+					<div class="checkbox">
+						<label>
+						    <%= f.check_box :remember_me %>
+			          <%= f.label :remember_me, "Remember me" %>
+						</label>
+					</div>
+				</div>
+        <div class="col-xs-6 col-sm-6">
+					<!-- <div class="checkbox">
+						<label>
+						   <a href="/admin/home/forget_password" class="for-pass">Forgot password ?</a><br>
+						</label>
+					</div> -->
+				</div>
+			</div>
+			<button type="submit" class="btn btn-primary btn-block login-btn">Sign In</button>
+		<%end%><br>
+    <div class="separator"></div>
+		<div class="text-center login-msg m-t-20">
+			New User? <a href="/users/new" class="blue-a"><strong>Sign Up</strong></a> Here
+		</div>
+</div>
+  </div>
+  <!-- /.login-box-body -->
+</div>
+<!-- /.login-box -->
+</body>
+</html>
+
+ 

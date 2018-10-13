@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>DemoCrawl</title>	
+		
+	</head>
+	<body class="login-bg">
+	
+		
+		<!-- <div class="login-box"> -->
+			<div class="container">
+				<div class="login-logo">
+					<!-- <img src="/logo.png" alt="logo" /> -->
+				</div>		 
+				
+				<%= form_for @user, url: users_path, method: :post do |f|%>
+
+					<div class="login-box-body">
+						<h1 class="login-heading text-center">Sign Up</h1>
+						<div class="row">
+							<div class="col-sm-offset-3 col-sm-6 col-md-offset-4 col-md-4">											
+								<div class="login-form">								
+									
+									<div class="form-group">
+										<%= f.text_field :name, class: 'form-control', required: true, placeholder: "Name"%>
+									</div>
+									
+									<div class="form-group">
+										<%= f.email_field :email, class: 'form-control', required: true,placeholder: "Email"%>
+									</div>
+									
+									<div class="form-group">
+										<%= f.text_field :address, class: 'form-control', required: true, placeholder: "Address"%>
+									</div>
+									
+									<div class="form-group">
+										<%= f.password_field :password, class: 'form-control', required: true, placeholder: "Password"%>
+									</div>
+									
+									<button type="submit" class="btn btn-default btn-block">Sign Up</button>
+								</div>
+								<div class="separator"></div>
+								<div class="text-center login-msg m-t-20">
+									Already have an account? <a href="/sessions/new" class="blue-a"><strong>Login</strong></a> Here
+								</div>		
+							</div>
+						</div>
+					</div>
+				<%end%>
+			</div>						
+		<!-- </div> -->
+		<!-- /.login-box -->
+	</body>
+</html>
