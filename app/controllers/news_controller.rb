@@ -5,6 +5,7 @@ class NewsController < ApplicationController
 
 	def index 
 		@news = News.not_deleted(current_user).paginate(:page => params[:page], :per_page => 10)
+		fresh_when etag: @news
 	end
 
 	def update_viewer
