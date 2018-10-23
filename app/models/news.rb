@@ -9,7 +9,7 @@ class News < ApplicationRecord
 	before_destroy :expire_cache
 
 	def self.not_deleted(user)
-		News.all.order("updated_at desc") - user.deleted_news.map(&:news)
+		News.all.order("created_at desc") - user.deleted_news.map(&:news)
 	end
 
 	def expire_cache

@@ -10,8 +10,9 @@ class NewsController < ApplicationController
 
 	def update_viewer
 		@user_news = UserNews.find_or_create_by(user_id: params[:user_id],news_id: params[:news_id])
+		@count = UserNews.where(user_id: params[:user_id],news_id: params[:news_id]).count
 		if @user_news.present?
-			render :json => {:status  => true}
+			render :json => {:status  => true, :count => @count}
 		else
 			render :json => {:status  => false}
 		end

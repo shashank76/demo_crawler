@@ -13,27 +13,26 @@
 <div class="container">
   <h5 class="pull-right"><%= current_user.name %> | <%= link_to "Logout", session_path(id: current_user.id), method: :delete %></h5>
   <h2>Hacker News</h2>
-  <% cache(@news) do %>
   <div class="list-group">
     <% @news.each do |news|%>
-      <% cache(news) do%>
     <div id="news_content<%= news.id%>">
       <h4 class="list-group-item-heading" id="news_title<%= news.id%>"><%= link_to("#{news.title}", news.url)%> 
       (<%= link_to(news.hacker_url, "https://news.ycombinator.com/from?site=#{news.hacker_url}", :target => "_blank") %>)</h4>
-      <p class="list-group-item-text"><%= news.posted_on %> | <%= news.upvotes%> | <%= news.comments%> | <%= viewers_count(news) %> viewers | <span class="delete-news" id="delete<%= news.id%>">Delete</span></p>
+      <p class="list-group-item-text"><%= news.posted_on %> | <%= news.upvotes%> | <%= news.comments%> | <span class="read-news" id="read<%= news.id%>"><%= viewers_count(news) %></span> viewers | <span class="delete-news" id="delete<%= news.id%>">Delete</span></p>
     </div>
     <p></p>
-    <%end%>
     <%end%>    
   </div>
   <%= will_paginate%>
-  <%end%>
 </div>
 
 </body>
 </html>
 <script type="text/javascript">
-  $(document).on('turbolinks:load',function(){
+    if(performance.navigation.type == 2){
+       window.location.reload(true);
+    }
+  $(document).ready(function(){
     $('.delete-news').click(function(event){
       var Id = event.target.id.split("delete")[1]
       $.ajax({
@@ -64,7 +63,8 @@
           },
           success: function(result){
             if (result.status == true){
-              // alert('success');
+              alert();
+              $("#read"+Id).text(result.count);
             }
           }
         });    
